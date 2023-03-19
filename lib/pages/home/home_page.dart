@@ -90,9 +90,18 @@ class _HomePageState extends State<HomePage> {
         children: [
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Text(Item.question,style: TextStyle(fontSize: 16,),),
+            child: Text(Item.question,style: TextStyle(fontSize: 14,),),
           ),
-          Text(Item.)
+          Text(Item.choices[0],style: TextStyle(fontSize: 14,),),
+          Text(Item.choices[1],style: TextStyle(fontSize: 14,),),
+          Text(Item.choices[2],style: TextStyle(fontSize: 14,),),
+          Text(Item.choices[3],style: TextStyle(fontSize: 14,),),
+          Text(Item.choices[4],style: TextStyle(fontSize: 14,),),
+          Text(Item.choices[5],style: TextStyle(fontSize: 14,),),
+          Text(Item.choices[6],style: TextStyle(fontSize: 14,),),
+          Text(Item.choices[7],style: TextStyle(fontSize: 14,),),
+          Text(Item.choices[8],style: TextStyle(fontSize: 14,),),
+          Text(Item.choices[9],style: TextStyle(fontSize: 14,),),
           ElevatedButton(
             onPressed: () {
               Navigator.push(context,
@@ -102,11 +111,11 @@ class _HomePageState extends State<HomePage> {
               primary: Colors.white,
             ),
             child: const Padding(
-              padding: EdgeInsets.all(12.0),
+              padding: EdgeInsets.all(4.0),
               child: Text(
                 'ดูผลโหวต',
                 style: TextStyle(
-                  fontSize: 15.0,
+                  fontSize: 10.0,
                   color: Colors.red,
                   fontWeight: FontWeight.bold,
                 ),
